@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="container">
-        <div id="display">
-            <div id="displayValue"></div>
-        </div>
-        <div id="input">
-            <span id="one" onclick="insertNum(1)">1</span>
-            <span id="two" onclick="insertNum(2)">2</span>
-            <span id="three" onclick="insertNum(3)">3</span>
-            <span id="four" onclick="insertNum(4)">4</span>
-            <span id="five" onclick="insertNum(5)">5</span>
-            <span id="six" onclick="insertNum(6)">6</span>
-            <span id="seven" onclick="insertNum(7)">7</span>
-            <span id="eight" onclick="insertNum(8)">8</span>
-            <span id="nine" onclick="insertNum(9)">9</span>
-            <span id="zero" onclick="insertNum(0)">0</span>
-            <span id="dot" onclick="insertNum('.')">.</span>
-            <span id="equal" onclick="equalTo()">=</span>
-            <span id="multiply" onclick="insertNum('*')">*</span>
-            <span id="add" onclick="insertNum('+')">+</span>
-            <span id="substract" onclick="insertNum('-')">-</span>
-            <span id="divide" onclick="insertNum('/')">/</span>
-            <span id="ac">AC</span>
-            <span id="remove">⌦</span>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid d-flex  justify-content-center align-items-center" style="height: 100vh;">
+    <div class=" row p-3 border border-black bg-info-subtle " style="max-width: 350px;">
+        <p class="col border border-black p-height"  id="displayValue"></p>
+      <div class=" row pt-3 pb-4 m-0 border border-black text-center bg-light" id="input">
+            <div class="row row-cols-3  p-0 m-0 grid gap-3 column-gap-3 d-flex justify-content-center ">
+                <span class="col-3 p-2 border border-danger rounded-5" id="one" onclick="insertNum(1)">1</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="two" onclick="insertNum(2)">2</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="three" onclick="insertNum(3)">3</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="four" onclick="insertNum(4)">4</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="five" onclick="insertNum(5)">5</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="six" onclick="insertNum(6)">6</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="seven" onclick="insertNum(7)">7</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="eight" onclick="insertNum(8)">8</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="nine" onclick="insertNum(9)">9</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="zero" onclick="insertNum(0)">0</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="dot" onclick="insertNum('.')">.</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="equal" onclick="equalTo()">=</span> 
+                <span class="col-3 p-2 border border-danger rounded-5" id="multiply" onclick="insertNum('*')">*</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="add" onclick="insertNum('+')">+</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="substract" onclick="insertNum('-')">-</span>     
+                <span class="col-3 p-2 border border-danger rounded-5" id="divide" onclick="insertNum('/')">/</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="ac">AC</span>
+                <span class="col-3 p-2 border border-danger rounded-5" id="remove">⌦</span>
+            </div>
+      </div>
+    </div>
     </div>
     <script src="script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

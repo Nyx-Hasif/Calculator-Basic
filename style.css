@@ -1,157 +1,35 @@
-body{
-    padding: 0;
-    margin: 0;
-    height: 100vh; 
-    overflow-y: hidden;
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
-*{
-    box-sizing: border-box;
+.my-border {
+  border: 1px solid rgb(0, 0, 0);
 }
 
-/* Set the width of the scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 5px;
+.p-height {
+  height: 40px;
+  align-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  overflow-x: auto;
+  background-color: #fff;
 }
 
-/* Set the height of the scrollbar */
-::-webkit-scrollbar-track {
-    background-color: #f0e3e3;
+.p-height::-webkit-scrollbar {
+  display: none;
 }
 
-/* Set the color of the scrollbar */
-::-webkit-scrollbar-thumb {
-    background-color: #1e0202;
-    border-radius: 5px;
-    
+span {
+  cursor: pointer;
+  user-select: none;
+  background-color: greenyellow;
+  transition: 0.2s all ease-in;
 }
 
-#container{
-    border: 5px solid black;
-    height: 100%; /* 100% follow height of body (100vh) */
-    
-}
-
-#display{
-    border: 5px solid rgb(212, 77, 77);
-    height: 10%;
-    width: 30%;
-    margin: 150px auto  0 auto; /* top right bot left*/
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: none;
-}
-
-
-#input{
-border: 5px solid rgb(212, 77, 77);
-height: 50%;
-width: 30%;
-margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-top: none;
-}
-
-span{
-    border: 5px solid rgb(19, 154, 167);
-    display: inline-block;
-    width: 30%;
-    height: 60px;
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 800;
-    border-radius: 20px;
-    cursor: pointer;
-    color: white;
-    background-color: black;
-    font-size: 30px;
-    user-select: none;
-    
-
-}
-
-
-#displayValue{
-    border: 4px black solid;
-    width: 80%;
-    height: 70%;
-    border-radius: 10px;
-    font-size: 45px;
-    align-content: center;
-    padding-left: 2px;
-    user-select: none;
-    overflow: hidden;
-    overflow-x: auto;
-    
-}
-
-
-
-
-/* Tablet mode */
-@media only screen and (max-width: 768px) {
-    /* CSS rules for tablet mode */
-    #display {
-         width: 50%;  
-          
-            
-    }
-
-         #displayValue {
-            width: 80%;
-         }
-
-        #input {
-                /* CSS rules */
-             width: 50%;
-        
-            }
-
-        span {
-          width: 80px;
-          font-size: 25px;
-          align-content: center;
-        
-
-        }
-
-}
-
-
-@media only screen and (max-width: 480px) {
-
-    /* CSS rules for phone mode */
-    #display {
-        /* CSS rules */
-        width: 60%;
-      
-    }
-
-    #displayValue{
-        width: 70%;
-        font-size: 30px;
-        padding-left: 3px;
-    }
-
-    #input {
-        /* CSS rules */
-      width: 60%;
-      gap: 4px;
-    }
-
-    span {
-        /* CSS rules */
-       width: 25%;
-       font-size: 20px;
-       align-content: center;
-       
-        
-    }
+span:hover {
+  background-color: rgb(0, 255, 0);
 }
