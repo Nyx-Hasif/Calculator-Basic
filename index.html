@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <div id="displayValue"></div>
+        </div>
+        <div id="input">
+            <span id="one" onclick="insertNum(1)">1</span>
+            <span id="two" onclick="insertNum(2)">2</span>
+            <span id="three" onclick="insertNum(3)">3</span>
+            <span id="four" onclick="insertNum(4)">4</span>
+            <span id="five" onclick="insertNum(5)">5</span>
+            <span id="six" onclick="insertNum(6)">6</span>
+            <span id="seven" onclick="insertNum(7)">7</span>
+            <span id="eight" onclick="insertNum(8)">8</span>
+            <span id="nine" onclick="insertNum(9)">9</span>
+            <span id="zero" onclick="insertNum(0)">0</span>
+            <span id="dot" onclick="insertNum('.')">.</span>
+            <span id="equal" onclick="equalTo()">=</span>
+            <span id="multiply" onclick="insertNum('*')">*</span>
+            <span id="add" onclick="insertNum('+')">+</span>
+            <span id="substract" onclick="insertNum('-')">-</span>
+            <span id="divide" onclick="insertNum('/')">/</span>
+            <span id="ac">AC</span>
+            <span id="remove">⌦</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
